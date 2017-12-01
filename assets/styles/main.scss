@@ -1,0 +1,32 @@
+// Grid settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+$grid-gutter-width: 	40px;
+$plats-color: 			#000;
+
+$theme-colors: (
+  primary: $plats-color,
+  secondary: $plats-color,
+  success: $plats-color,
+  info: $plats-color,
+  warning: $plats-color,
+  danger: $plats-color,
+  light: $plats-color,
+  dark: $plats-color
+);
+
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:scss
+@import "../../bower_components/bootstrap/scss/bootstrap.scss";
+// endbower
+
+@import "components/comments";
+@import "components/forms";
+@import "components/wp-classes";
+
+@import "layouts/tinymce";
+
+@import 'base';			// Mobile
+@import 'tablet';		// Tablet
+@import 'desktop';		// Desktop
+// @import 'fonts';		// Fonts
