@@ -1,5 +1,7 @@
 <?php
-
+/**
+* Custom post type - Projects
+*/
 function create_post_type() {
   register_post_type( 'project',
     array(

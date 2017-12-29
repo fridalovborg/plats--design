@@ -1,7 +1,3 @@
 <?php get_template_part('templates/page', 'header'); ?>
 
-<div class="alert alert-warning">
-  <?php _e('Sorry, but the page you were trying to view does not exist.', 'sage'); ?>
-</div>
-
-<?php get_search_form(); ?>
+<a class="orange-bold-italic text-center" href="<?= esc_url(home_url('/')); ?>"><h1>Sidan kan inte visas!<br>Tryck här för att komma till startsidan</h1></a>

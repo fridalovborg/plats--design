@@ -4,9 +4,6 @@
 <div class="container-fluid">
 	<div class="row">
 	    <div class="col-12">
-
-			<!-- <h1 class="entry-title">Nyheter</h1> -->
-
 			<?php if (!have_posts()) : ?>
 			  <div class="alert alert-warning">
 			    <?php _e('Sorry, no results were found.', 'sage'); ?>

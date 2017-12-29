@@ -1,14 +1,12 @@
 /* ------------------------------------------------------------------
-		DESKTOP
+		LANDSCAPE
 ------------------------------------------------------------------ */
-@include media-breakpoint-up(lg) {
+@media (min-width: 576px) and (max-width: 767px) {
 
+.menu ul {
+	padding: 40vh 0 25vh 0;
+}
 footer .widget {
-	width: 90%;
+	width: 80%;
 }
-.items-piktogram {
-	width: 29%;
-    margin: 2%;
-}
-
 }

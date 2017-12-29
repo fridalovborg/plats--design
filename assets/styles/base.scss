@@ -1,9 +1,459 @@
+/* ------------------------------------------------------------------
+		BASE
+------------------------------------------------------------------ */
+html {
+	height: 100%;
+	background-color: $plats-color-light;
+}
 body {
-	background: #F5E7DE;
+	background-color: $plats-color-light;
+	font-family: 'Freight';
+}
+body.home {
+	background-size: cover;
+	background-position: center;
+	min-height: 100%;
+	background-repeat: no-repeat;
+	
+	//Text rendering
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+/* ------------------------------------------------------------------
+		FONT STYLE
+------------------------------------------------------------------ */
+//Regular
+.gray-regular, p {
+	color: $plats-gray;
+    font-weight: normal;
+    font-style: normal;
+}
+.pink-regular, .pink-regular p {
+	color: $plats-pink;
+    font-weight: normal;
+    font-style: normal;
+}
+//Bold
+.gray-bold {
+	color: $plats-gray;
+    font-weight: bold;
+    font-style: normal;
+}
+.orange-bold-italic {
+	color: $plats-header;
+    font-weight: bold;
+    font-style: italic;
+}
+.pink-bold-italic {
+	color: $plats-pink;
+    font-weight: bold;
+    font-style: italic;
+}
+//Italic
+.gray-bold-italic {
+	color: $plats-gray;
+    font-weight: bold;
+    font-style: italic;
+}
+.gray-italic {
+	color: $plats-gray;
+    font-weight: normal;
+    font-style: italic;
+}
+//Other 
+h1, h2 {
+	font-size: 1.6em;
+}
+.underline {
+	text-decoration: underline;
 }
 /* ------------------------------------------------------------------
 		HEADER
 ------------------------------------------------------------------ */
+body.home header {
+	background-color: transparent;
+}
+header {
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+	padding: 10px 0;
+	background-color: $plats-color-light;
+}
 .logo {
 	width: 160px;
+}
+.menu-toggle {
+	z-index: 10;
+	float: right;
+	padding-top: 12px;
+}
+body.menu-active .menu-icon { 
+	display: none;
+}
+body.menu-active .menu-icon-exit { 
+	display: block;
+	margin: 0 auto; 
+}
+body .menu-icon-exit {
+	display: none;
+}
+.icon-content {
+	width: 50px;
+	height: 50px;
+	border: 2px solid $plats-header;
+	border-radius: 50%;
+	display: table-cell; 
+	vertical-align: middle; 
+	text-align: center;
+}
+/* ------------------------------------------------------------------
+		NAV
+------------------------------------------------------------------ */
+body .menu {
+	display: none;
+}
+.menu-main-menu-container {
+	display: flex;
+    justify-content: center;
+}
+.menu {
+	background: $plats-color-light;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9;
+	overflow: scroll;
+	-webkit-owerflow-scrolling: touch;
+
+	ul {
+		display: block;
+		position: relative;
+		padding: 30vh 0;
+    	text-align: left;
+	    width: 90%;
+	    max-width: 188.4px;
+
+	    .current-menu-item a {
+			border-bottom: 3px solid rgba(255,92,48,1);
+		}
+
+		li {
+			width: 100%;
+			line-height: 80px;
+
+			a {
+				color: $plats-header;
+				font-weight: bold;
+				font-style: italic;
+				font-size: 2.5em;
+				padding-bottom: 3px;
+				border-bottom: 3px solid rgba(255,92,48,0);
+				transition: 600ms all;
+
+				&:hover {
+					text-decoration: none;
+					border-bottom: 3px solid rgba(255,92,48,1);
+				}
+			}
+		}
+	}
+}
+/* ------------------------------------------------------------------
+		MAIN CONTENT
+------------------------------------------------------------------ */
+main {
+	padding-top: 180px;
+	width: 100%;
+}
+/* ------------------------------------------------------------------
+		PAGE - PROJEKT ARCHIVE
+------------------------------------------------------------------ */
+.projects {
+	display: block;
+}
+//Pink filter when hover
+.projects:hover .layer {
+	background-color: rgba(255, 130, 181, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.projects:hover {
+	text-decoration: none;
+}
+.projects-all {
+	position: relative;
+	width: 100%;
+	padding-bottom: 70%;
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0;
+    margin-top: 50px;
+}
+.project-title {
+	font-size: 1.2em;
+	padding-top: 15px;
+}
+.subheading {
+	width: 100%;	
+	font-size: 1em;
+}
+/* ------------------------------------------------------------------
+		PAGE - PROJEKT SINGLE
+------------------------------------------------------------------ */
+.project-header section h3 {
+    font-weight: bold;
+    font-style: italic;
+}
+.project-img {
+	width: auto;
+	height: 300px;
+	background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.container-box {
+	width: 100%;
+	background-color: $plats-color;
+	padding-bottom: 80px;
+	margin: 40px 0;
+
+	h2, h4, h5 {
+		padding-top: 80px;
+		font-size: 1.6em;
+	}
+
+	ul {
+		list-style-type: none;
+		padding: 0;
+
+		li {
+			line-height: 30px;
+		}
+	}
+}
+.grid-landscape {
+	width: 100%;
+	padding-top: 62.5%; // 10:16
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 20px 0;
+}
+.grid-1-x-portrait {
+	//padding-top: 160%; // Större i mobil
+	width: 50%;
+	padding-top: 62.5%;
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+	display: block;
+	margin: 0 auto;
+}
+.grid-1-x-portrait, .grid-portrait {
+	margin-top: 20px;
+    margin-bottom: 20px;
+}
+.grid-portrait {
+	width: 100%;
+	padding-top: 133.93%;
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	//padding-top: 133.93%; // Större i mobil
+}
+.content-square {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+.grid-square-one {
+	width: 62.5%;
+    padding-top: 62.5%;
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.grid-square {
+	width: 100%;
+	padding-top: 100%;
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+}
+.grid-square-triple {
+	width: 29%;
+	padding-top: 29%;
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.extra-margin {
+	margin-top: 40px;
+    margin-bottom: 40px;
+}
+.zoom:hover {
+	cursor: zoom-in;
+}
+/* ------------------------------------------------------------------
+		PAGE - OM PLATS! - INSTAGRAM
+------------------------------------------------------------------ */
+.plats-img {
+	width: 90%;
+	padding-top: 80%;
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.content-instagram {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+}
+.instagram-img {
+	width: 90%;
+	padding-top: 90%;
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 20px;
+}
+/* ------------------------------------------------------------------
+		PAGE - VAD?
+------------------------------------------------------------------ */
+.container-plats-vad h1, .container-plats-vad p {
+	text-align: center;
+}
+.container-plats-vad p {
+	font-size: 1.4em;
+}
+.container-plats-piktogram .container-box h5 {
+	padding-top: 20px;
+}
+.content-piktogram {
+	padding-top: 80px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	flex-flow: row wrap;
+}
+.items-piktogram {
+	width: 80%;
+	margin: 10%;
+}
+.piktogram-img {
+	width: 100%;
+	padding-top: 100%;
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+/* ------------------------------------------------------------------
+		PAGE - KONTAKT
+------------------------------------------------------------------ */
+.contact-fom {
+	margin-top: 40px;
+}
+.contact-fom .wpcf7 form p {
+	color: $plats-header;
+
+	label {
+		border-bottom: 2px solid $plats-header;
+		width: 100%;
+
+		span input, textarea {
+			width: 100%;
+			background: transparent;
+			border: none;
+			outline: none;
+			color: $plats-gray;
+		}
+		textarea {
+			height: 100px;
+			width: 100%;
+		}
+	}
+	input[type="submit"] {
+		width: 70px;
+	    height: 70px;
+	    border-radius: 50%;
+	    margin: 0 auto;
+	    display: block;
+		background-color: $plats-header;
+		border: none;
+		padding: 10px;
+		color: #FFF;
+		outline: none;
+	}
+	//Override autofill color
+	input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+	    -webkit-box-shadow: 0 0 0 1000px $plats-color-light inset !important;
+	    -webkit-text-fill-color: $plats-gray !important;
+	}
+}
+div.wpcf7-mail-sent-ok, div.wpcf7-validation-errors {
+	border: 2px solid rgba(255,92,48,1);
+	color: $plats-gray;
+}
+/* ------------------------------------------------------------------
+		FOOTER
+------------------------------------------------------------------ */
+body.home footer {
+	display: none;
+}
+footer {
+	padding-bottom: 50px;
+
+	.footer-logo {
+		width: 80%;
+		padding: 20px;
+		display: block;
+		margin: 0 auto;
+	}
+	.widget {
+		text-align: center;
+		margin: 0 auto;
+		width: 100%;
+
+		h3 {
+			color: $plats-pink;
+			font-weight: bold;
+			font-style: italic;
+			font-size: 0.9em;
+			margin: 10px;
+		}
+		.textwidget p {
+			color: $plats-pink;
+			font-weight: normal;
+			font-style: normal;
+			font-size: 0.9em;
+			margin: 10px;
+		}
+	}
+	.icon img {
+		margin: 0 auto;
+	    display: block;
+	    padding: 1px;
+
+	    &:hover {
+	    	opacity: 0.8;
+	    }
+	}
 }

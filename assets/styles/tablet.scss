@@ -3,4 +3,71 @@
 ------------------------------------------------------------------ */
 @include media-breakpoint-up(md) {
 
+header {
+	padding: 20px;
+}
+main {
+	padding-top: 220px;
+}
+// PROJEKT
+body.single-project main {
+	padding-top: 150px;
+}
+.project-img {
+	height: 500px;
+	margin: 0 0 20px 0;
+}
+.menu {
+	overflow: hidden;
+}
+.grid-1-x-portrait {
+	width: 46.7%;
+	padding-top: 62.5%;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.grid-portrait {
+	width: 100%;
+	padding-top: 133.93%;
+}
+footer {
+	.footer-logo {
+		width: 60%;
+		padding: 40px;
+		padding-bottom: 20px;
+	}
+	.widget {
+		width: 103%;
+	}
+}
+.content-piktogram {
+	justify-content: flex-start;
+}
+.items-piktogram {
+	width: 40%;
+	margin: 5%;
+}
+//INSTAGRAM
+.content-instagram {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+}
+.instagram-img {
+	width: 18.5%;
+	padding-top: 18.5%;
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0;
+}
+
+// KONTAKT
+.contact-fom {
+	margin-top: 0;
+}
+
 }

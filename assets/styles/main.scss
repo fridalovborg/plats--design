@@ -1,8 +1,13 @@
 // Grid settings
 $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
-$grid-gutter-width: 	40px;
-$plats-color: 			#000;
+$grid-gutter-width:     40px;
+
+$plats-color:           #F5E7DE;	// Puderrosa
+$plats-color-light:     #FAF3EE;	// Puderrosa light
+$plats-pink:            #FF82B5;	// Rosa
+$plats-gray:            #6E8594;	// Grå
+$plats-header:          #FF5C30;	// Orange
 
 $theme-colors: (
   primary: $plats-color,
@@ -15,10 +20,17 @@ $theme-colors: (
   dark: $plats-color
 );
 
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+  xl: 1140px
+	// xl: 961px
+);
+
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
 // bower:scss
 @import "../../bower_components/bootstrap/scss/bootstrap.scss";
-// endbower
 
 @import "components/comments";
 @import "components/forms";
@@ -26,7 +38,9 @@ $theme-colors: (
 
 @import "layouts/tinymce";
 
-@import 'base';			// Mobile
-@import 'tablet';		// Tablet
-@import 'desktop';		// Desktop
-// @import 'fonts';		// Fonts
+@import 'base';         // Mobile
+@import 'landscape';    // Mobile Lanscape
+@import 'tablet';       // Tablet
+@import 'desktop';      // Desktop
+@import 'fonts';        // Fonts
+@import "zoom";         // Zoom View images

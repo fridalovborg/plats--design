@@ -1,0 +1,62 @@
+/* ------------------------------------------------------------------
+		ZOOM VIEW
+------------------------------------------------------------------ */
+.zoomview__overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1000000;
+	background-color: rgba(000,000,000,0.8);
+	cursor: zoom-out;
+}
+.zoomview__next {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 33.333%;
+	z-index: 1000001;
+	cursor: e-resize;
+}
+.zoomview__prev {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 33.333%;
+	z-index: 1000001;
+	cursor: w-resize;
+}
+.zoomview__caption {
+	position: fixed;
+	color: #FFF;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+	z-index: 1000002;
+	text-align: center;
+}
+.zoomview__close {
+	background-image: url('../images/exit-white.svg');
+	width: 30px;
+	height: 30px;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: fixed;
+	top: 30px;
+	right: 100px;
+	z-index: 1000002;
+	text-align: right;
+	cursor: pointer;
+}
+.zoomview__overlay img {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	user-select: none;
+	border: 4px solid white;
+}

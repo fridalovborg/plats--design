@@ -2,6 +2,7 @@
   "dependencies": {
     "main.js": {
       "files": [
+        "scripts/zoom.js",
         "scripts/main.js",
         "scripts/plats.js"
       ],
