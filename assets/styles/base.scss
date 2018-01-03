@@ -7,7 +7,7 @@ html {
 }
 body {
 	background-color: $plats-color-light;
-	font-family: 'Freight';
+	font-family: 'Freight' !important;
 }
 body.home {
 	background-size: cover;
@@ -37,23 +37,23 @@ body.home {
 //Bold
 .gray-bold {
 	color: $plats-gray;
-    font-weight: bold;
+    // font-weight: bold;
     font-style: normal;
 }
 .orange-bold-italic {
 	color: $plats-header;
-    font-weight: bold;
+    // font-weight: bold;
     font-style: italic;
 }
 .pink-bold-italic {
 	color: $plats-pink;
-    font-weight: bold;
+    // font-weight: bold;
     font-style: italic;
 }
 //Italic
 .gray-bold-italic {
 	color: $plats-gray;
-    font-weight: bold;
+    // font-weight: bold;
     font-style: italic;
 }
 .gray-italic {
@@ -82,7 +82,7 @@ header {
 	background-color: $plats-color-light;
 }
 .logo {
-	width: 160px;
+	width: 190px;
 }
 .menu-toggle {
 	z-index: 10;
@@ -147,7 +147,7 @@ body .menu {
 
 			a {
 				color: $plats-header;
-				font-weight: bold;
+				// font-weight: bold;
 				font-style: italic;
 				font-size: 2.5em;
 				padding-bottom: 3px;
@@ -209,7 +209,7 @@ main {
 		PAGE - PROJEKT SINGLE
 ------------------------------------------------------------------ */
 .project-header section h3 {
-    font-weight: bold;
+    // font-weight: bold;
     font-style: italic;
 }
 .project-img {
@@ -399,7 +399,7 @@ main {
 		background-color: $plats-header;
 		border: none;
 		padding: 10px;
-		color: #FFF;
+		color: $plats-color;
 		outline: none;
 	}
 	//Override autofill color
@@ -409,8 +409,10 @@ main {
 	}
 }
 div.wpcf7-mail-sent-ok, div.wpcf7-validation-errors {
-	border: 2px solid rgba(255,92,48,1);
-	color: $plats-gray;
+	border: 2px solid transparent;
+	background-color: $plats-header;
+	color: $plats-color;
+	padding: 20px;
 }
 /* ------------------------------------------------------------------
 		FOOTER
@@ -434,7 +436,7 @@ footer {
 
 		h3 {
 			color: $plats-pink;
-			font-weight: bold;
+			// font-weight: bold;
 			font-style: italic;
 			font-size: 0.9em;
 			margin: 10px;

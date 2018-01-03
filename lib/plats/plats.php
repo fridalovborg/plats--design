@@ -6,7 +6,7 @@
 */
 namespace Plats;
 
-include_once 'projects.php';
+include_once 'projekt.php';
 include_once 'instagram.php';
 
 function thumb() {

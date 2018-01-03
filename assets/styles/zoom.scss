@@ -18,7 +18,8 @@
 	bottom: 0;
 	width: 33.333%;
 	z-index: 1000001;
-	cursor: e-resize;
+	cursor: pointer;
+	// cursor: e-resize;
 }
 .zoomview__prev {
 	position: fixed;
@@ -27,7 +28,8 @@
 	bottom: 0;
 	width: 33.333%;
 	z-index: 1000001;
-	cursor: w-resize;
+	cursor: pointer;
+	// cursor: w-resize;
 }
 .zoomview__caption {
 	position: fixed;

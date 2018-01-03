@@ -1,6 +1,6 @@
 <?php 
 /**
-* Project/archive
+* Projekt/archive
 * The archive page for Plats!
 **/
 ?>

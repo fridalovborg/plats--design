@@ -4,13 +4,13 @@
 * @param $count, $min_id
 * @return $result->data
 */
-function get_instagram_posts($count = 5, $min_id = null) {
+function get_instagram_posts($count = 4, $min_id = null) {
   // @plats_designbyra : 
   // access token : 
   // count limited to 20 in sandbox mode
 
-  $token = "4642759.3a81a9f.3eb646564dbf43e98dce75421adb39a6"; # plats_designbyra
-  $user_id = "4642759"; # plats_designbyra
+  $token = "1236824823.1677ed0.6231a7556c6142a4a0b41088da2fca7d"; # plats_designbyra
+  $user_id = "1236824823"; # plats_designbyra
 
   $url = "https://api.instagram.com/v1/users/${user_id}/media/recent/?access_token=${token}&count=${count}";
 
