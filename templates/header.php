@@ -3,7 +3,8 @@
         <div class="row">
             <div class="col-12">
                 <a href="<?= esc_url(home_url('/')); ?>">
-                    <img class="logo" src="<?php echo get_template_directory_uri(); ?>/dist/images/logo2.png">
+                    <?php $logo = get_field('logotyp'); ?>
+                    <img class="logo" src="<?php echo $logo["url"]?>">
                 </a>
                 <a href="#" class="menu-toggle">
                     <div class="icon-content">
