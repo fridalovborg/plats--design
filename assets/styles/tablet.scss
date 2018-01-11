@@ -13,10 +13,6 @@ main {
 body.single-project main {
 	padding-top: 150px;
 }
-.project-img {
-	height: 500px;
-	margin: 0 0 20px 0;
-}
 .menu {
 	overflow: hidden;
 }
@@ -27,13 +23,9 @@ body.single-project main {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-.grid-portrait {
-	width: 100%;
-	padding-top: 133.93%;
-}
 footer {
-	.footer-logo {
-		width: 60%;
+	section img {
+		width: 100%;
 		padding: 40px;
 		padding-bottom: 20px;
 	}
@@ -63,6 +55,10 @@ footer {
     background-repeat: no-repeat;
     display: inline-block;
     margin: 0;
+}
+.plats-img {
+	width: 100%;
+	padding-top: 90%;
 }
 
 // KONTAKT

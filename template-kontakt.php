@@ -24,7 +24,7 @@
 			<div class="row">
 				<div class="col-12 col-sm-12 col-md-1 col-lg-2"></div>
 				<div class="col-12 col-sm-12 col-md-10 col-lg-8">
-					<div class="project-img" style="background-image: url('<?php echo get_the_post_thumbnail_url( null, 'large' ); ?>')"></div>
+					<div class="project-img kontakt-extra-margin" style="background-image: url('<?php echo get_the_post_thumbnail_url( null, 'large' ); ?>')"></div>
 				</div><!-- .col-12 .col-sm-12 .col-md-10 .col-lg-8 -->
 			</div><!-- .row -->
 		<?php endif; ?>

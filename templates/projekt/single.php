@@ -11,7 +11,7 @@
 			<div class="col-12 col-sm-12 col-md-10 col-lg-8">
 			
 				<!-- FEATURE IMAGE -->
-				<div class="project-img zoom" data-zoomview-caption="Keep co. interior, Göteborg" data-zoomview-src="<?php echo get_the_post_thumbnail_url( null, 'large' ); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url( null, 'large' ); ?>')">
+				<div class="project-img zoom" data-zoomview-caption="" data-zoomview-src="<?php echo get_the_post_thumbnail_url( null, 'plats-single' ); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url( null, 'plats-single' ); ?>')">
 				</div><!-- END: FEATURE IMAGE .project-img -->
 			</div><!-- .col-12 .col-sm-12 .col-md-10 .col-lg-8 -->
 		</div><!-- .row -->
@@ -60,7 +60,7 @@
 						<!-- 1 x Landscape -->
 						<div class="col-12 col-sm-12 col-md-10 col-lg-8">
 							<?php $image = get_sub_field('image'); ?>
-							<div class="grid-landscape zoom" data-zoomview-src="<?php echo $image["url"]; ?>" style="background-image: url('<?php echo $image["url"]; ?>')"></div>
+							<div class="grid-landscape extra-margin zoom" data-zoomview-src="<?php echo $image["url"]; ?>" style="background-image: url('<?php echo $image["url"]; ?>')"></div>
 						</div><!-- .col-12 .col-sm-12 .col-md-10 .col-lg-8 -->
 						<!-- END: 1 x Landscape -->
 					<?php endif; ?>
@@ -69,11 +69,11 @@
 						<!-- 2 x Landscape -->
 						<div class="col-12 col-sm-12 col-md-5 col-lg-4">
         					<?php $image1 = get_sub_field('image_1'); ?>
-        					<div class="grid-landscape zoom" data-zoomview-src="<?php echo $image1["url"]; ?>" style="background-image: url('<?php echo $image1["url"]; ?>')"></div>	
+        					<div class="grid-landscape extra-margin zoom" data-zoomview-src="<?php echo $image1["url"]; ?>" style="background-image: url('<?php echo $image1["url"]; ?>')"></div>	
 						</div><!-- .col-12 .col-sm-12 .col-md-5 .col-lg-4 -->
 						<div class="col-12 col-sm-12 col-md-5 col-lg-4">
         					<?php $image2 = get_sub_field('image_2'); ?>
-        					<div class="grid-landscape zoom" data-zoomview-src="<?php echo $image2["url"]; ?>" style="background-image: url('<?php echo $image2["url"]; ?>')"></div>		
+        					<div class="grid-landscape extra-margin zoom" data-zoomview-src="<?php echo $image2["url"]; ?>" style="background-image: url('<?php echo $image2["url"]; ?>')"></div>		
 						</div><!-- .col-12 .col-sm-12 .col-md-5 .col-lg-4 -->
 						<!-- END: 2 x Landscape -->
 					<?php endif; ?>
@@ -82,7 +82,7 @@
 						<!-- 1 x Portrait -->
 						<div class="col-12 col-sm-12 col-md-10 col-lg-8">
 							<?php $image = get_sub_field('image'); ?>
-							<div class="grid-1-x-portrait zoom" data-zoomview-src="<?php echo $image["url"]; ?>" style="background-image: url('<?php echo $image["url"]; ?>')"></div>
+							<div class="grid-1-x-portrait extra-margin zoom" data-zoomview-src="<?php echo $image["url"]; ?>" style="background-image: url('<?php echo $image["url"]; ?>')"></div>
 						</div><!-- .col-12 .col-sm-12 .col-md-10 .col-lg-8 -->
 						<!-- END: 1 x Portrait -->
 					<?php endif; ?>
@@ -91,11 +91,11 @@
 						<!-- 2 x Portrait -->
 						<div class="col-6 col-sm-6 col-md-5 col-lg-4">
         					<?php $image1 = get_sub_field('image_1'); ?>
-        					<div class="grid-portrait zoom" data-zoomview-src="<?php echo $image1["url"]; ?>" style="background-image: url('<?php echo $image1["url"]; ?>')"></div>
+        					<div class="grid-portrait extra-margin zoom" data-zoomview-src="<?php echo $image1["url"]; ?>" style="background-image: url('<?php echo $image1["url"]; ?>')"></div>
 						</div><!-- .col-6 .col-sm-6 .col-md-5 .col-lg-4 -->
 						<div class="col-6 col-sm-6 col-md-5 col-lg-4">
         					<?php $image2 = get_sub_field('image_2'); ?>
-        					<div class="grid-portrait zoom" data-zoomview-src="<?php echo $image2["url"]; ?>" style="background-image: url('<?php echo $image2["url"]; ?>')"></div>
+        					<div class="grid-portrait extra-margin zoom" data-zoomview-src="<?php echo $image2["url"]; ?>" style="background-image: url('<?php echo $image2["url"]; ?>')"></div>
 						</div><!-- .col-6 .col-sm-6 .col-md-5 .col-lg-4 -->
 						<!-- END: 2 x Portrait -->
 					<?php endif; ?>
@@ -113,11 +113,11 @@
 						<!-- 2 x Square -->
 						<div class="col-12 col-sm-12 col-md-5 col-lg-4">
         					<?php $image1 = get_sub_field('image_1'); ?>
-        					<div class="grid-square zoom" data-zoomview-src="<?php echo $image1["url"]; ?>" style="background-image: url('<?php echo $image1["url"]; ?>')"></div>
+        					<div class="grid-square extra-margin zoom" data-zoomview-src="<?php echo $image1["url"]; ?>" style="background-image: url('<?php echo $image1["url"]; ?>')"></div>
 						</div><!-- .col-12 .col-sm-12 .col-md-5 .col-lg-4 -->
 						<div class="col-12 col-sm-12 col-md-5 col-lg-4">
         					<?php $image2 = get_sub_field('image_2'); ?>
-        					<div class="grid-square zoom" data-zoomview-src="<?php echo $image2["url"]; ?>" style="background-image: url('<?php echo $image2["url"]; ?>')"></div>
+        					<div class="grid-square extra-margin zoom" data-zoomview-src="<?php echo $image2["url"]; ?>" style="background-image: url('<?php echo $image2["url"]; ?>')"></div>
 						</div><!-- .col-12 .col-sm-12 .col-md-5 .col-lg-4 -->
 						<!-- END: 2 x Square -->
 					<?php endif; ?>
@@ -127,13 +127,13 @@
 						<div class="col-12 col-sm-12 col-md-10 col-lg-8">
 							<div class="content-square">
 	        					<?php $image1 = get_sub_field('image_1'); ?>
-	        					<div class="grid-square-triple zoom" data-zoomview-src="<?php echo $image1["url"]; ?>" style="background-image: url('<?php echo $image1["url"]; ?>')"></div>
+	        					<div class="grid-square-triple extra-margin zoom" data-zoomview-src="<?php echo $image1["url"]; ?>" style="background-image: url('<?php echo $image1["url"]; ?>')"></div>
 
 	        					<?php $image2 = get_sub_field('image_2'); ?>
-	        					<div class="grid-square-triple zoom" data-zoomview-src="<?php echo $image2["url"]; ?>" style="background-image: url('<?php echo $image2["url"]; ?>')"></div>
+	        					<div class="grid-square-triple extra-margin zoom" data-zoomview-src="<?php echo $image2["url"]; ?>" style="background-image: url('<?php echo $image2["url"]; ?>')"></div>
 
 	        					<?php $image3 = get_sub_field('image_3'); ?>
-	        					<div class="grid-square-triple zoom" data-zoomview-src="<?php echo $image3["url"]; ?>" style="background-image: url('<?php echo $image3["url"]; ?>')"></div>
+	        					<div class="grid-square-triple extra-margin zoom" data-zoomview-src="<?php echo $image3["url"]; ?>" style="background-image: url('<?php echo $image3["url"]; ?>')"></div>
 							</div><!-- .content-square -->
 						</div><!-- .col-12 .col-sm-12 .col-md-10 .col-lg-8 -->
 						<!-- END: 3 x Square -->

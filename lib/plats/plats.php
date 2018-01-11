@@ -10,10 +10,8 @@ include_once 'projekt.php';
 include_once 'instagram.php';
 
 function thumb() {
-	add_image_size('x-small', 200, 200);
-	add_image_size('small', 250, 250);
-	add_image_size('plats-project', 400, 400);
-	add_image_size('plats-singel', 600, 600);
+	add_image_size('plats-archive', 600, 600);
+	add_image_size('plats-single', 1800, 1800);
 }
 add_action('after_setup_theme', __NAMESPACE__ . '\\thumb');
 

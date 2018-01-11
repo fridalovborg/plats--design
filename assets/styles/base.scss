@@ -37,23 +37,19 @@ body.home {
 //Bold
 .gray-bold {
 	color: $plats-gray;
-    // font-weight: bold;
     font-style: normal;
 }
 .orange-bold-italic {
 	color: $plats-header;
-    // font-weight: bold;
     font-style: italic;
 }
 .pink-bold-italic {
 	color: $plats-pink;
-    // font-weight: bold;
     font-style: italic;
 }
 //Italic
 .gray-bold-italic {
 	color: $plats-gray;
-    // font-weight: bold;
     font-style: italic;
 }
 .gray-italic {
@@ -63,7 +59,11 @@ body.home {
 }
 //Other 
 h1, h2 {
-	font-size: 1.6em;
+	font-size: 1.9em;
+}
+p {
+	font-size: 1.2em;
+	line-height: 1.35em;
 }
 .underline {
 	text-decoration: underline;
@@ -115,8 +115,8 @@ body .menu {
 	display: none;
 }
 .menu-main-menu-container {
-	display: flex;
-    justify-content: center;
+	// display: flex;
+    // justify-content: center;
 }
 .menu {
 	background: $plats-color-light;
@@ -133,9 +133,7 @@ body .menu {
 		display: block;
 		position: relative;
 		padding: 30vh 0;
-    	text-align: left;
-	    width: 90%;
-	    max-width: 188.4px;
+    	text-align: center;
 
 	    .current-menu-item a {
 			border-bottom: 3px solid rgba(255,92,48,1);
@@ -150,7 +148,7 @@ body .menu {
 				// font-weight: bold;
 				font-style: italic;
 				font-size: 2.5em;
-				padding-bottom: 3px;
+				padding-bottom: 6px;
 				border-bottom: 3px solid rgba(255,92,48,0);
 				transition: 600ms all;
 
@@ -174,6 +172,10 @@ main {
 ------------------------------------------------------------------ */
 .projects {
 	display: block;
+}
+.projects h5 {
+	font-size: 1.6em;
+	padding-top: 20px;
 }
 //Pink filter when hover
 .projects:hover .layer {
@@ -203,18 +205,19 @@ main {
 }
 .subheading {
 	width: 100%;	
-	font-size: 1em;
+	font-size: 1.2em;
+	line-height: 1.35em;
 }
 /* ------------------------------------------------------------------
 		PAGE - PROJEKT SINGLE
 ------------------------------------------------------------------ */
 .project-header section h3 {
-    // font-weight: bold;
+    font-size: 1.9em;
     font-style: italic;
 }
 .project-img {
-	width: auto;
-	height: 300px;
+	width: 100%;
+	padding-top: 66.5%;
 	background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
@@ -223,9 +226,14 @@ main {
 	width: 100%;
 	background-color: $plats-color;
 	padding-bottom: 80px;
-	margin: 40px 0;
+	margin: 100px 0 80px;
 
-	h2, h4, h5 {
+	h2 {
+		padding-top: 80px;
+		font-size: 1.9em;
+	} 
+
+	h4, h5 {
 		padding-top: 80px;
 		font-size: 1.6em;
 	}
@@ -236,16 +244,18 @@ main {
 
 		li {
 			line-height: 30px;
+			font-size: 1.2em;
+			//line-height: 1.35em;
 		}
 	}
 }
 .grid-landscape {
 	width: 100%;
-	padding-top: 62.5%; // 10:16
+	padding-top: 66.5%;
 	background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    margin: 20px 0;
+    //margin: 20px 0;
 }
 .grid-1-x-portrait {
 	//padding-top: 160%; // Större i mobil
@@ -263,20 +273,20 @@ main {
 }
 .grid-portrait {
 	width: 100%;
-	padding-top: 133.93%;
+	padding-top: 150.4%;
 	background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 	display: block;
 	margin: 0 auto;
-	margin-bottom: 20px;
+	//margin-bottom: 20px;
 	//padding-top: 133.93%; // Större i mobil
 }
 .content-square {
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
-	margin-top: 20px;
+	//margin-top: 20px;
 }
 .grid-square-one {
 	width: 62.5%;
@@ -292,7 +302,7 @@ main {
 	background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    margin-top: 40px;
+    //margin-top: 40px;
 }
 .grid-square-triple {
 	width: 29%;
@@ -302,8 +312,8 @@ main {
     background-repeat: no-repeat;
 }
 .extra-margin {
-	margin-top: 40px;
-    margin-bottom: 40px;
+	margin-top: 20px;
+    margin-bottom: 20px;
 }
 .zoom:hover {
 	cursor: zoom-in;
@@ -334,14 +344,17 @@ main {
     display: inline-block;
     margin: 20px;
 }
+.om-extra-margin {
+	margin-bottom: 17px;
+}
 /* ------------------------------------------------------------------
 		PAGE - VAD?
 ------------------------------------------------------------------ */
+.transparent {
+	background-color: transparent;
+}
 .container-plats-vad h1, .container-plats-vad p {
 	text-align: center;
-}
-.container-plats-vad p {
-	font-size: 1.4em;
 }
 .container-plats-piktogram .container-box h5 {
 	padding-top: 20px;
@@ -414,6 +427,10 @@ div.wpcf7-mail-sent-ok, div.wpcf7-validation-errors {
 	color: $plats-color;
 	padding: 20px;
 }
+.kontakt-extra-margin {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
 /* ------------------------------------------------------------------
 		FOOTER
 ------------------------------------------------------------------ */
@@ -421,9 +438,9 @@ body.home footer {
 	display: none;
 }
 footer {
-	padding-bottom: 50px;
+	padding: 50px 0;
 
-	.footer-logo {
+	section img {
 		width: 80%;
 		padding: 20px;
 		display: block;
@@ -436,16 +453,17 @@ footer {
 
 		h3 {
 			color: $plats-pink;
-			// font-weight: bold;
 			font-style: italic;
-			font-size: 0.9em;
 			margin: 10px;
+			font-size: 1.2em;
+			line-height: 1.35em;
 		}
 		.textwidget p {
 			color: $plats-pink;
 			font-weight: normal;
 			font-style: normal;
-			font-size: 0.9em;
+			font-size: 1.2em;
+			line-height: 1.35em;
 			margin: 10px;
 		}
 	}

@@ -188,7 +188,11 @@ var zoomView = (function($) {
 		
 		// insert item and update caption
 		this.$overlay.html(this.items[this.currentItemIndex].$img);
-		this.$caption.html(this.items[this.currentItemIndex].caption);
+		//this.$caption.html(this.items[this.currentItemIndex].caption);
+
+		var caption = this.items[this.currentItemIndex].caption;
+		caption += this.currentItemIndex + 1 + '/' + this.items.length;
+		this.$caption.html('Bild ' + caption);
 	};
 
 	View.prototype.getNextItemIndex = function() {

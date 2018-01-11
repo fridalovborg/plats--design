@@ -4,11 +4,11 @@
 * The archive page for Plats!
 **/
 ?>
-<?php $projectsAll = get_the_post_thumbnail_url( 'plats-project' ); ?>
+<?php $projectsAll = get_the_post_thumbnail_url( 'plats-archive' ); ?>
 <div class="container">
 	<div class="row">
 		<div class="col-12">
-			<h1 class="orange-bold-italic text-center project-header"><?php dynamic_sidebar('sidebar-primary'); ?></h1>
+			<div class="orange-bold-italic text-center project-header"><?php dynamic_sidebar('sidebar-primary'); ?></div>
 		</div><!-- .col-12 -->
 	</div><!-- .row -->
 
@@ -22,8 +22,8 @@
 							<div class="projects-all" style="background-image: url('<?php echo get_the_post_thumbnail_url() . $projectsAll; ?>')">
 								<div class="layer"></div>
 							</div><!-- .projects-all -->
-							<h3 class="project-title gray-bold"><?php the_title(); ?></h3>
-							<p class="subheading gray-italic"><?php the_field('text'); ?></p>
+							<h5 class="gray-regular"><?php the_title(); ?></h5>
+							<p class="subheading gray-regular"><?php the_field('text'); ?></p>
 						</a><!-- .projects -->
 					</div><!-- .col-12 .col-sm-12 .col-md-6 .col-lg-6 -->
 				<?php endwhile; ?>
