@@ -3,8 +3,12 @@
         <div class="row">
             <div class="col-12">
                 <a href="<?= esc_url(home_url('/')); ?>">
-                    <?php $logo = get_field('logotyp'); ?>
-                    <img class="logo" src="<?php echo $logo["url"]?>">
+                    <?php
+                    $custom_logo_id = get_theme_mod( 'custom_logo' );
+                    $image = wp_get_attachment_image_src( $custom_logo_id , 'small' );
+                    ?>
+                    <img class="logo" src="<?php echo $image[0]; ?>">
+          
                 </a>
                 <a href="#" class="menu-toggle">
                     <div class="icon-content">

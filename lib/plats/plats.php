@@ -30,3 +30,5 @@ add_filter('dynamic_sidebar_params', function($params) {
 
 	return $params;
 });
+
+add_theme_support( 'custom-logo' );
