@@ -7,13 +7,13 @@
                     $custom_logo_id = get_theme_mod( 'custom_logo' );
                     $image = wp_get_attachment_image_src( $custom_logo_id , 'small' );
                     ?>
-                    <img class="logo" src="<?php echo $image[0]; ?>">
+                    <img class="logo" alt="logo" src="<?php echo $image[0]; ?>">
           
                 </a>
                 <a href="#" class="menu-toggle">
                     <div class="icon-content">
-                        <img class="menu-icon" src="<?php echo get_template_directory_uri(); ?>/dist/images/svg/menu.svg">
-                        <img class="menu-icon-exit" src="<?php echo get_template_directory_uri(); ?>/dist/images/svg/exit.svg">
+                        <img class="menu-icon" alt="menu" src="<?php echo get_template_directory_uri(); ?>/dist/images/svg/menu.svg">
+                        <img class="menu-icon-exit" alt="exit menu" src="<?php echo get_template_directory_uri(); ?>/dist/images/svg/exit.svg">
                     </div><!-- .icon-content -->
                 </a><!-- .menu-toggle -->
             </div><!-- .col-12 -->

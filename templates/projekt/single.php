@@ -24,23 +24,23 @@
 				<div class="col-12 col-sm-12 col-md-8 col-lg-8">
 					<div class="row">
 						<div class="col-12 col-sm-12 col-md-12 col-lg-8">
-							<h4 class="gray-bold-italic"><?php the_title(); ?></h4>
+							<h4 class="gray-italic"><?php the_title(); ?></h4>
 							<?php the_content(); ?>
 						</div>
 						<div class="col-12 col-sm-12 col-md-12 col-lg-4">
 							<!-- ADVANCED CUSTOM FIELDS - UPPDRAG -->
 							<h5 class="gray-regular"><?php the_field('header'); ?></h5>
 							<ul>
-								<li class="gray-regular"><span class="gray-bold-italic"><?php the_field('header_vem'); ?></span> <?php the_field('vem'); ?></li>
-								<li class="gray-regular"><span class="gray-bold-italic"><?php the_field('header_var'); ?></span> <?php the_field('var'); ?></li>
-								<li class="gray-regular"><span class="gray-bold-italic"><?php the_field('header_nar'); ?></span> <?php the_field('nar'); ?></li>
-								<li class="gray-regular"><span class="gray-bold-italic"><?php the_field('header_vad'); ?></span> <?php the_field('vad'); ?></li>
-								<li class="gray-regular"><span class="gray-bold-italic"><?php the_field('header_foto'); ?></span> <?php the_field('foto'); ?></li>
+								<li class="gray-regular"><span class="gray-italic"><?php the_field('header_vem'); ?></span> <?php the_field('vem'); ?></li>
+								<li class="gray-regular"><span class="gray-italic"><?php the_field('header_var'); ?></span> <?php the_field('var'); ?></li>
+								<li class="gray-regular"><span class="gray-italic"><?php the_field('header_nar'); ?></span> <?php the_field('nar'); ?></li>
+								<li class="gray-regular"><span class="gray-italic"><?php the_field('header_vad'); ?></span> <?php the_field('vad'); ?></li>
+								<li class="gray-regular"><span class="gray-italic"><?php the_field('header_foto'); ?></span> <?php the_field('foto'); ?></li>
 							</ul>
 							<?php $caseLink = get_field('link'); ?>
 							<?php if( $caseLink ): ?>
 								<?php the_field('rubrik'); ?>
-								<a class="gray-regular underline" href="<?php echo $caseLink['url']; ?>" target="<?php echo $caseLink['target']; ?>"><?php echo $caseLink['title']; ?></a>
+								<a class="gray-regular underline" href="<?php echo $caseLink['url']; ?>" target="_blank"><?php echo $caseLink['title']; ?></a>
 							<?php endif; ?>
 						</div><!--.col-12 .col-sm-12 .col-md-12 .col-lg-4 -->
 					</div> <!--.row -->

@@ -23,33 +23,15 @@ body.home {
 /* ------------------------------------------------------------------
 		FONT STYLE
 ------------------------------------------------------------------ */
-//Regular
+//regular
 .gray-regular, p {
 	color: $plats-gray;
     font-weight: normal;
     font-style: normal;
 }
-.pink-regular, .pink-regular p {
-	color: $plats-pink;
-    font-weight: normal;
-    font-style: normal;
-}
-//Bold
-.gray-bold {
-	color: $plats-gray;
-    font-style: normal;
-}
-.orange-bold-italic {
+//italic
+.orange-italic {
 	color: $plats-header;
-    font-style: italic;
-}
-.pink-bold-italic {
-	color: $plats-pink;
-    font-style: italic;
-}
-//Italic
-.gray-bold-italic {
-	color: $plats-gray;
     font-style: italic;
 }
 .gray-italic {
@@ -57,7 +39,7 @@ body.home {
     font-weight: normal;
     font-style: italic;
 }
-//Other 
+//other 
 h1, h2 {
 	font-size: 1.9em;
 }
@@ -114,10 +96,6 @@ body .menu-icon-exit {
 body .menu {
 	display: none;
 }
-.menu-main-menu-container {
-	// display: flex;
-    // justify-content: center;
-}
 .menu {
 	background: $plats-color-light;
 	position: fixed;
@@ -145,7 +123,6 @@ body .menu {
 
 			a {
 				color: $plats-header;
-				// font-weight: bold;
 				font-style: italic;
 				font-size: 2.5em;
 				padding-bottom: 6px;
@@ -226,7 +203,8 @@ main {
 	width: 100%;
 	background-color: $plats-color;
 	padding-bottom: 80px;
-	margin: 100px 0 80px;
+	margin-top: 40px;
+	margin-bottom: 20px;
 
 	h2 {
 		padding-top: 80px;
@@ -245,7 +223,6 @@ main {
 		li {
 			line-height: 30px;
 			font-size: 1.2em;
-			//line-height: 1.35em;
 		}
 	}
 }
@@ -255,7 +232,6 @@ main {
 	background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    //margin: 20px 0;
 }
 .grid-1-x-portrait {
 	//padding-top: 160%; // Större i mobil
@@ -279,14 +255,12 @@ main {
     background-repeat: no-repeat;
 	display: block;
 	margin: 0 auto;
-	//margin-bottom: 20px;
 	//padding-top: 133.93%; // Större i mobil
 }
 .content-square {
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
-	//margin-top: 20px;
 }
 .grid-square-one {
 	width: 62.5%;
@@ -302,7 +276,6 @@ main {
 	background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    //margin-top: 40px;
 }
 .grid-square-triple {
 	width: 29%;
@@ -348,11 +321,8 @@ main {
 	margin-bottom: 17px;
 }
 /* ------------------------------------------------------------------
-		PAGE - VAD?
+		PAGE - VAD
 ------------------------------------------------------------------ */
-.transparent {
-	background-color: transparent;
-}
 .container-plats-vad h1, .container-plats-vad p {
 	text-align: center;
 }
@@ -415,7 +385,7 @@ main {
 		color: $plats-color;
 		outline: none;
 	}
-	//Override autofill color
+	//override autofill color
 	input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 	    -webkit-box-shadow: 0 0 0 1000px $plats-color-light inset !important;
 	    -webkit-text-fill-color: $plats-gray !important;
@@ -429,7 +399,6 @@ div.wpcf7-mail-sent-ok, div.wpcf7-validation-errors {
 }
 .kontakt-extra-margin {
 	margin-top: 80px;
-	margin-bottom: 80px;
 }
 /* ------------------------------------------------------------------
 		FOOTER
@@ -440,16 +409,18 @@ body.home footer {
 footer {
 	padding: 50px 0;
 
+	.widget_text {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
 	section img {
-		width: 80%;
-		padding: 20px;
 		display: block;
 		margin: 0 auto;
 	}
 	.widget {
 		text-align: center;
 		margin: 0 auto;
-		width: 100%;
 
 		h3 {
 			color: $plats-pink;

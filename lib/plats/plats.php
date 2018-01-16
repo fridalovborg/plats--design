@@ -2,7 +2,7 @@
 /**
 * Functions Plats
 * @param $params
-* @return $params
+* @return $html, $params
 */
 namespace Plats;
 
@@ -22,7 +22,7 @@ add_filter('dynamic_sidebar_params', function($params) {
 
 	if ($instagram_url) {
 		$html = '<a class="icon" href="' . $instagram_url . '" target="_blank">';
-		$html .= '<img src="' . get_template_directory_uri() . '/dist/images/instagram.svg">';
+		$html .= '<img alt="instagram logo" src="' . get_template_directory_uri() . '/dist/images/instagram.svg">';
 		$html .= '</a>';
 
 		$params[0]['after_widget'] .= $html;

@@ -1,6 +1,6 @@
 (function($) {
 
-	// MOBILE MENU
+	// mobile menu
 	$( '.menu-toggle' ).click(function() {
 
 		$('body').toggleClass('menu-active');
@@ -15,7 +15,7 @@
 		}
 	});
 
-	// ZOOMVIEW
+	// zoomview
 	zoomView();
 	
 })(jQuery);

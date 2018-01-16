@@ -4,11 +4,15 @@
 * The archive page for Plats!
 **/
 ?>
+<?php 
+$query = new WP_Query( array( 'post_type' => 'projekt' ) );
+$query->set( 'posts_per_page', '-1' );
+?>
 <?php $projectsAll = get_the_post_thumbnail_url( 'plats-archive' ); ?>
 <div class="container">
 	<div class="row">
 		<div class="col-12">
-			<div class="orange-bold-italic text-center project-header"><?php dynamic_sidebar('sidebar-primary'); ?></div>
+			<div class="orange-italic text-center project-header"><?php dynamic_sidebar('sidebar-primary'); ?></div>
 		</div><!-- .col-12 -->
 	</div><!-- .row -->
 

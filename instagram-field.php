@@ -6,9 +6,9 @@
 			<div class="col-12 col-sm-12 col-md-10 col-lg-10">
 				<?php $link = get_field('link'); ?>
 				<?php if( $link ): ?>
-					<h2 class="orange-bold-italic om-extra-margin">
+					<h2 class="orange-italic om-extra-margin">
 						<?php the_field('rubrik'); ?>
-						<a class="orange-bold-italic" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php echo $link['title']; ?></a>
+						<a class="orange-italic" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php echo $link['title']; ?></a>
 					</h2>
 				<?php endif; ?>
 			</div><!-- .col-12 .col-sm-12 .col-md-10 .col-lg-10 -->

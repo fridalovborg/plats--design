@@ -1,13 +1,13 @@
-// Grid settings
+//grid settings
 $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 $grid-gutter-width:     40px;
 
-$plats-color:           #F5E7DE;	// Puderrosa
-$plats-color-light:     #FAF3EE;	// Puderrosa light
-$plats-pink:            #FF82B5;	// Rosa
-$plats-gray:            #6E8594;	// Grå
-$plats-header:          #FF5C30;	// Orange
+$plats-color:           #F5E7DE;	//puderrosa
+$plats-color-light:     #FAF3EE;	//puderrosa light
+$plats-pink:            #FF82B5;	//rosa
+$plats-gray:            #6E8594;	//grå
+$plats-header:          #FF5C30;	//orange
 
 $theme-colors: (
   primary: $plats-color,
@@ -25,7 +25,6 @@ $container-max-widths: (
 	md: 720px,
 	lg: 960px,
   xl: 961px
-	// xl: 961px
 );
 
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
@@ -38,9 +37,9 @@ $container-max-widths: (
 
 @import "layouts/tinymce";
 
-@import 'base';         // Mobile
-@import 'landscape';    // Mobile Lanscape
-@import 'tablet';       // Tablet
-@import 'desktop';      // Desktop
-@import 'fonts';        // Fonts
-@import "zoom";         // Zoom View images
+@import 'base';         //mobile
+@import 'landscape';    //mobile-lanscape
+@import 'tablet';       //tablet
+@import 'desktop';      //desktop
+@import 'fonts';        //fonts
+@import "zoom";         //zoom-view-images

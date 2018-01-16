@@ -35,5 +35,4 @@ function get_instagram_posts($count = 4, $min_id = null) {
     return null;
   }
 }
-
 ?>

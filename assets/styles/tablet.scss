@@ -8,8 +8,9 @@ header {
 }
 main {
 	padding-top: 220px;
+	padding-bottom: 50px;
 }
-// PROJEKT
+//projekt
 body.single-project main {
 	padding-top: 150px;
 }
@@ -23,16 +24,7 @@ body.single-project main {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-footer {
-	section img {
-		width: 100%;
-		padding: 40px;
-		padding-bottom: 20px;
-	}
-	.widget {
-		width: 103%;
-	}
-}
+//var
 .content-piktogram {
 	justify-content: flex-start;
 }
@@ -40,7 +32,7 @@ footer {
 	width: 40%;
 	margin: 5%;
 }
-//INSTAGRAM
+//instagram
 .content-instagram {
 	width: 100%;
 	display: flex;
@@ -60,10 +52,18 @@ footer {
 	width: 100%;
 	padding-top: 90%;
 }
-
-// KONTAKT
+.container-box {
+	padding-bottom: 80px;
+	margin-top: 100px;
+	margin-bottom: 80px;
+}
+//kontakt
 .contact-fom {
 	margin-top: 0;
+}
+//footer
+footer .widget_text {
+	width: 50%;
 }
 
 }
