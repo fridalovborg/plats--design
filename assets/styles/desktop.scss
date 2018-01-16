@@ -10,12 +10,20 @@
 
 }
 //Large container when large screen
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1300px) {
 	.container {
-		max-width: 1700px !important;
+		width: 1400px;
 	}
 	footer section img {
 		width: 400px;
 		max-width: 400px;
+	}
+	footer .widget_text {
+		width: 30%;
+	}
+}
+@media screen and (min-width: 1500px) {
+	.container {
+		max-width: 1700px !important;
 	}
 }
