@@ -150,7 +150,7 @@ main {
 .projects {
 	display: block;
 }
-.projects h5 {
+h5.gray-regular {
 	font-size: 1.6em;
 	padding-top: 20px;
 }
@@ -221,7 +221,7 @@ main {
 		padding: 0;
 
 		li {
-			line-height: 30px;
+			line-height: 1.35em;
 			font-size: 1.2em;
 		}
 	}
