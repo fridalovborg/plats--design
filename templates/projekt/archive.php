@@ -26,6 +26,10 @@ $query->set( 'posts_per_page', '-1' );
 							<div class="projects-all" style="background-image: url('<?php echo get_the_post_thumbnail_url() . $projectsAll; ?>')">
 								<div class="layer"></div>
 							</div><!-- .projects-all -->
+							<!-- img element for pinterest -->
+							<div style="display: none;">
+								<img src="<?php echo get_the_post_thumbnail_url() . $projectsAll; ?>">
+							</div>
 							<h5 class="gray-regular"><?php the_title(); ?></h5>
 							<p class="subheading gray-regular"><?php the_field('text'); ?></p>
 						</a><!-- .projects -->

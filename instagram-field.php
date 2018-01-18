@@ -25,6 +25,10 @@
 						<?php foreach (array_reverse($instagram) as $insta): ?>
 							<?php $imageLink = $insta->link; ?>
 							<div class="instagram-img" style="background-image: url('<?php echo $insta->images->standard_resolution->url; ?>');"></div>
+							<!-- img element for pinterest -->
+							<div style="display: none;">
+							    <img src="<?php echo $insta->images->standard_resolution->url; ?>">
+							</div>
 						<?php endforeach; ?>
 					</div><!-- .content-instagram -->
 				</a>

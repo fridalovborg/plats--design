@@ -31,6 +31,11 @@
 									<?php $image = get_sub_field('image'); ?>
 									<div class="piktogram-img" style="background-image: url('<?php echo $image["url"] ?>')">
 									</div><!-- .piktogram-img -->
+
+					        		<!-- img element for pinterest -->
+									<div style="display: none;">
+									    <img src="<?php echo $image["url"] ?>">
+									</div>
 									
 									<h5 class="gray-regular"><?php the_sub_field('header') ?></h5>
 									<p class="gray-regular"><?php the_sub_field('paragraph') ?></p>

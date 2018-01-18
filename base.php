@@ -22,6 +22,10 @@ use Roots\Sage\Wrapper;
 <!-- END: Advanced custom fields - Background image -->
 
 <body <?php body_class(); ?> style="background-image: url('<?php echo $backgroundUrl["url"]; ?>')">
+<!-- img element for pinterest -->
+<div style="display: none;">
+    <img src="<?php echo $backgroundUrl["url"]; ?>">
+</div>
     <!--[if IE]>
     <div class="alert alert-warning">
     <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>

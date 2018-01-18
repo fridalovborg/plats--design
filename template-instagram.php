@@ -14,6 +14,11 @@
 			</div><!-- .col-12 .col-sm-12 .col-md-5 .col-lg-5 -->
 			<div class="col-12 col-sm-12 col-md-5 col-lg-5">
 				<div class="plats-img" style="background-image: url('<?php echo get_the_post_thumbnail_url() . $platsImage; ?>');"></div>
+				
+				<!-- img element for pinterest -->
+				<div style="display: none;">
+				    <img src="<?php echo get_the_post_thumbnail_url() . $platsImage; ?>">
+				</div>
 			</div><!-- .col-12 .col-sm-12 .col-md-5 .col-lg-5 -->
 		</div><!-- .row -->
 	</div><!-- .container -->

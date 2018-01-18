@@ -8,7 +8,6 @@
                     $image = wp_get_attachment_image_src( $custom_logo_id , 'small' );
                     ?>
                     <img class="logo" alt="logo" src="<?php echo $image[0]; ?>">
-          
                 </a>
                 <a href="#" class="menu-toggle">
                     <div class="icon-content">
