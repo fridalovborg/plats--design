@@ -20,7 +20,7 @@ $query->set( 'posts_per_page', '-1' );
 		<div class="col-12 col-sm-12 col-md-2 col-lg-2"></div>
 		<div class="col-12 col-sm-12 col-md-8 col-lg-8">
 			<div class="row">
-				<?php while (have_posts()) : the_post(); ?>
+				<?php while ($query->have_posts()) : $query->the_post(); ?>
 					<div class="col-12 col-sm-12 col-md-6 col-lg-6">
 						<a class="projects" href="<?php the_permalink(); ?>">
 							<div class="projects-all" style="background-image: url('<?php echo get_the_post_thumbnail_url() . $projectsAll; ?>')">
