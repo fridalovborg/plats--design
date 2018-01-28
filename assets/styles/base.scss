@@ -143,6 +143,10 @@ body .menu {
 main {
 	padding-top: 180px;
 	width: 100%;
+
+	a[href^=tel] {
+		color: $plats-header;
+	}
 }
 /* ------------------------------------------------------------------
 		PAGE - PROJEKT ARCHIVE

@@ -5,8 +5,11 @@
 **/
 ?>
 <?php 
-$query = new WP_Query( array( 'post_type' => 'projekt' ) );
-$query->set( 'posts_per_page', '-1' );
+$unlimited = array( 
+	'post_type' => 'projekt',
+	'posts_per_page' => -1,
+);
+$query = new WP_Query( $unlimited );
 ?>
 <?php $projectsAll = get_the_post_thumbnail_url( 'plats-archive' ); ?>
 <div class="container">
