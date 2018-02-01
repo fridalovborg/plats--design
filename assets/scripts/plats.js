@@ -10,6 +10,7 @@
 		if ($( '.menu' ).hasClass( 'active' )) {
 
 			$('.menu').fadeIn();
+			$('header').addClass('header');
 		} else {
 			$('.menu').fadeOut();
 		}

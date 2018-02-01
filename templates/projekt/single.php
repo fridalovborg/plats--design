@@ -196,4 +196,5 @@
 			</div><!--.container -->
 		<?php endwhile; ?>
 	<?php endif; ?>
+	<a class="link-projekt" href="http://platsdesign.se/projekt/">Se fler projekt</a>
 <?php endwhile; ?>

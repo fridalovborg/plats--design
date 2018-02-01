@@ -10,32 +10,25 @@ $plats-gray:            #6E8594;	//grå
 $plats-header:          #FF5C30;	//orange
 
 $theme-colors: (
-  primary: $plats-color,
-  secondary: $plats-color,
-  success: $plats-color,
-  info: $plats-color,
-  warning: $plats-color,
-  danger: $plats-color,
-  light: $plats-color,
-  dark: $plats-color
+    primary: $plats-color,
+    secondary: $plats-color,
+    success: $plats-color,
+    info: $plats-color,
+    warning: $plats-color,
+    danger: $plats-color,
+    light: $plats-color,
+    dark: $plats-color
 );
 
 $container-max-widths: (
-	sm: 540px,
-	md: 720px,
-	lg: 960px,
-  xl: 961px
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 961px
 );
 
-// Automatically injected Bower dependencies via wiredep (never manually edit this block)
 // bower:scss
 @import "../../bower_components/bootstrap/scss/bootstrap.scss";
-
-@import "components/comments";
-@import "components/forms";
-@import "components/wp-classes";
-
-@import "layouts/tinymce";
 
 @import 'base';         //mobile
 @import 'landscape';    //mobile-lanscape

@@ -1,7 +1,7 @@
 <?php
 /**
- * Template Name: Plats! Instagram
- */
+* Template Name: Plats! Om
+*/
 ?>
 <?php $platsImage = get_the_post_thumbnail_url( 'large' ); ?>
 <?php while (have_posts()) : the_post(); ?>
@@ -13,7 +13,7 @@
 				<?php the_content(); ?>
 			</div><!-- .col-12 .col-sm-12 .col-md-5 .col-lg-5 -->
 			<div class="col-12 col-sm-12 col-md-5 col-lg-5">
-				<div class="plats-img" style="background-image: url('<?php echo get_the_post_thumbnail_url() . $platsImage; ?>');"></div>
+				<div class="grid-portrait" style="background-image: url('<?php echo get_the_post_thumbnail_url() . $platsImage; ?>');"></div>
 				
 				<!-- img element for pinterest -->
 				<div style="display: none;">

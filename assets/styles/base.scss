@@ -15,7 +15,7 @@ body.home {
 	min-height: 100%;
 	background-repeat: no-repeat;
 	
-	//Text rendering
+	//text rendering
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -55,6 +55,10 @@ p {
 ------------------------------------------------------------------ */
 body.home header {
 	background-color: transparent;
+}
+body.menu-active header {
+	background-color: $plats-color-light;
+	transition: background 1.3s linear;
 }
 header {
 	position: fixed;
@@ -158,7 +162,7 @@ h5.gray-regular {
 	font-size: 1.6em;
 	padding-top: 20px;
 }
-//Pink filter when hover
+//pink filter when hover
 .projects:hover .layer {
 	background-color: rgba(255, 130, 181, 0.4);
     position: absolute;
@@ -238,7 +242,6 @@ h5.gray-regular {
     background-repeat: no-repeat;
 }
 .grid-1-x-portrait {
-	//padding-top: 160%; // Större i mobil
 	width: 50%;
 	padding-top: 62.5%;
 	background-size: cover;
@@ -259,7 +262,6 @@ h5.gray-regular {
     background-repeat: no-repeat;
 	display: block;
 	margin: 0 auto;
-	//padding-top: 133.93%; // Större i mobil
 }
 .content-square {
 	display: flex;
@@ -295,17 +297,27 @@ h5.gray-regular {
 .zoom:hover {
 	cursor: zoom-in;
 }
+.link-projekt {
+	margin: 0 auto;
+    display: block;
+    margin-top: 90px;
+    width: 113px;
+	color: $plats-header;
+    font-style: italic;
+    font-size: 1.2em;
+    padding-bottom: 3px;
+    border-bottom: 2px solid rgba(255,92,48,0);
+    transition: all .6s;
+
+    &:hover {
+    	text-decoration: none;
+    	border-bottom: 2px solid #ff5c30;
+    	color: $plats-header;
+    }
+}
 /* ------------------------------------------------------------------
 		PAGE - OM PLATS! - INSTAGRAM
 ------------------------------------------------------------------ */
-.plats-img {
-	width: 90%;
-	padding-top: 80%;
-	background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-}
 .content-instagram {
 	width: 100%;
 	display: flex;

@@ -1,7 +1,7 @@
 <?php
 /**
- * Template Name: Plats! Kontakt
- */
+* Template Name: Plats! Kontakt
+*/
 ?>
 <?php $platsImage = get_the_post_thumbnail_url( 'large' ); ?>
 <?php while (have_posts()) : the_post(); ?>

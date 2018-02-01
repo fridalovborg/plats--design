@@ -1,7 +1,7 @@
 <?php
 /**
- * Template Name: Plats! Vad?
- */
+* Template Name: Plats! Vad?
+*/
 ?>
 <?php $platsImage = get_the_post_thumbnail_url( 'large' ); ?>
 
