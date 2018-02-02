@@ -6,11 +6,9 @@
 ?>
 <?php while (have_posts()) : the_post(); ?>
 	<div class="container">
-		<div class="row">
-			<div class="col-12 col-sm-12 col-md-1 col-lg-2"></div>
+		<div class="row justify-content-center">
 			<div class="col-12 col-sm-12 col-md-10 col-lg-8">
-			
-				<!-- FEATURE IMAGE -->
+				<!-- feature image -->
 				<div class="project-img zoom" data-zoomview-caption="" data-zoomview-src="<?php echo get_the_post_thumbnail_url( null, 'plats-single' ); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url( null, 'plats-single' ); ?>')">
 				</div><!-- END: FEATURE IMAGE .project-img -->
 				<!-- img element for pinterest -->
@@ -23,8 +21,7 @@
 	
 	<div class="container-box">
 		<div class="container">
-			<div class="row">
-				<div class="col-12 col-sm-12 col-md-2 col-lg-2"></div>
+			<div class="row justify-content-center">
 				<div class="col-12 col-sm-12 col-md-8 col-lg-8">
 					<div class="row">
 						<div class="col-12 col-sm-12 col-md-12 col-lg-8">
@@ -56,12 +53,10 @@
 	</div><!--.container-box -->
 
 	<?php if( have_rows('media') ): ?>
-		<!-- ADVANCED CUSTOM FIELDS - GRIDLAYOUT -->
+		<!-- advanced custom fields, gridlayout -->
 		<?php while ( have_rows('media') ) : the_row(); ?>
 			<div class="container">
-				<div class="row">
-					<div class="col-12 col-sm-12 col-md-1 col-lg-2"></div>
-					
+				<div class="row justify-content-center">
 					<?php if( get_row_layout() == '1_x_landscape' ): ?>
 						<!-- 1 x Landscape -->
 						<div class="col-12 col-sm-12 col-md-10 col-lg-8">
@@ -196,5 +191,5 @@
 			</div><!--.container -->
 		<?php endwhile; ?>
 	<?php endif; ?>
-	<a class="link-projekt" href="http://platsdesign.se/projekt/">Se fler projekt</a>
+	<a class="link-projekt" href="http://www.platsdesign.se/projekt/"><h1>Se fler projekt!</h1></a>
 <?php endwhile; ?>

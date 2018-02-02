@@ -1,8 +1,7 @@
-<!-- OM PLATS - INSTAGRAM -->
+<!-- part to om plats! - instagram field -->
 <div class="container-box">
 	<div class="container">
-		<div class="row">
-			<div class="col-12 col-sm-12 col-md-1 col-lg-1"></div>
+		<div class="row justify-content-center">
 			<div class="col-12 col-sm-12 col-md-10 col-lg-10">
 				<?php $link = get_field('link'); ?>
 				<?php if( $link ): ?>
@@ -13,10 +12,8 @@
 				<?php endif; ?>
 			</div><!-- .col-12 .col-sm-12 .col-md-10 .col-lg-10 -->
 		</div><!-- .row -->
-	</div><!-- .container -->
-	<div class="container">
-		<div class="row">
-			<div class="col-12 col-sm-12 col-md-1 col-lg-1"></div>
+		
+		<div class="row justify-content-center">
 			<div class="col-12 col-sm-12 col-md-10 col-lg-10">
 			<?php if( $link ): ?>
 				<a href="<?php echo $link['url']; ?>" target="_blank">

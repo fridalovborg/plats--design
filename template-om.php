@@ -6,8 +6,7 @@
 <?php $platsImage = get_the_post_thumbnail_url( 'large' ); ?>
 <?php while (have_posts()) : the_post(); ?>
 	<div class="container">
-		<div class="row">
-			<div class="col-12 col-sm-12 col-md-1 col-lg-1"></div>
+		<div class="row justify-content-center">
 			<div class="col-12 col-sm-12 col-md-5 col-lg-5">
 				<h1 class="orange-italic om-extra-margin"><?php the_title(); ?></h1>
 				<?php the_content(); ?>

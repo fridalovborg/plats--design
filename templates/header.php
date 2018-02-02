@@ -11,8 +11,8 @@
                 </a>
                 <a href="#" class="menu-toggle">
                     <div class="icon-content">
-                        <img class="menu-icon" alt="menu" src="<?php echo get_template_directory_uri(); ?>/dist/images/svg/menu.svg">
-                        <img class="menu-icon-exit" alt="exit menu" src="<?php echo get_template_directory_uri(); ?>/dist/images/svg/exit.svg">
+                        <img class="menu-icon" alt="menu" src="<?php echo get_template_directory_uri(); ?>/dist/images/menu.svg">
+                        <img class="menu-icon-exit" alt="exit menu" src="<?php echo get_template_directory_uri(); ?>/dist/images/exit.svg">
                     </div><!-- .icon-content -->
                 </a><!-- .menu-toggle -->
             </div><!-- .col-12 -->

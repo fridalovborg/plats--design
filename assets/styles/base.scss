@@ -300,19 +300,22 @@ h5.gray-regular {
 .link-projekt {
 	margin: 0 auto;
     display: block;
-    margin-top: 90px;
-    width: 113px;
+    margin-top: 30px;
+    width: 186px;
 	color: $plats-header;
     font-style: italic;
-    font-size: 1.2em;
-    padding-bottom: 3px;
-    border-bottom: 2px solid rgba(255,92,48,0);
-    transition: all .6s;
 
+	h1 {
+		padding-bottom: 6px;
+		border-bottom: 3px solid rgba(255,92,48,0);
+		transition: all .6s;
+	}
     &:hover {
     	text-decoration: none;
-    	border-bottom: 2px solid #ff5c30;
     	color: $plats-header;
+    	h1 {
+    		border-bottom: 3px solid #ff5c30;
+    	}
     }
 }
 /* ------------------------------------------------------------------
