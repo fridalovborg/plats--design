@@ -7,7 +7,7 @@
 <?php while (have_posts()) : the_post(); ?>
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-12 col-sm-12 col-md-10 col-lg-8">
+			<div class="col-12 col-sm-12 col-md-10">
 				<!-- feature image -->
 				<div class="project-img zoom" data-zoomview-caption="" data-zoomview-src="<?php echo get_the_post_thumbnail_url( null, 'plats-single' ); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url( null, 'plats-single' ); ?>')">
 				</div><!-- END: FEATURE IMAGE .project-img -->
@@ -59,7 +59,7 @@
 				<div class="row justify-content-center">
 					<?php if( get_row_layout() == '1_x_landscape' ): ?>
 						<!-- 1 x Landscape -->
-						<div class="col-12 col-sm-12 col-md-10 col-lg-8">
+						<div class="col-12 col-sm-12 col-md-10">
 							<?php $image = get_sub_field('image'); ?>
 							<div class="grid-landscape extra-margin zoom" data-zoomview-src="<?php echo $image["url"]; ?>" style="background-image: url('<?php echo $image["url"]; ?>')"></div>
 							<!-- img element for pinterest -->
@@ -72,7 +72,7 @@
 
 					<?php if( get_row_layout() == '2_x_landscape' ): ?>
 						<!-- 2 x Landscape -->
-						<div class="col-12 col-sm-12 col-md-5 col-lg-4">
+						<div class="col-12 col-sm-12 col-md-5">
         					<?php $image1 = get_sub_field('image_1'); ?>
         					<div class="grid-landscape extra-margin zoom" data-zoomview-src="<?php echo $image1["url"]; ?>" style="background-image: url('<?php echo $image1["url"]; ?>')"></div>
 							<!-- img element for pinterest -->
@@ -80,7 +80,7 @@
 							    <img src="<?php echo $image1["url"]; ?>">
 							</div>
 						</div><!-- .col-12 .col-sm-12 .col-md-5 .col-lg-4 -->
-						<div class="col-12 col-sm-12 col-md-5 col-lg-4">
+						<div class="col-12 col-sm-12 col-md-5">
         					<?php $image2 = get_sub_field('image_2'); ?>
         					<div class="grid-landscape extra-margin zoom" data-zoomview-src="<?php echo $image2["url"]; ?>" style="background-image: url('<?php echo $image2["url"]; ?>')"></div>
         					<!-- img element for pinterest -->
@@ -93,7 +93,7 @@
 
 					<?php if( get_row_layout() == '1_x_portrait' ): ?>
 						<!-- 1 x Portrait -->
-						<div class="col-12 col-sm-12 col-md-10 col-lg-8">
+						<div class="col-12 col-sm-12 col-md-10">
 							<?php $image = get_sub_field('image'); ?>
 							<div class="grid-1-x-portrait extra-margin zoom" data-zoomview-src="<?php echo $image["url"]; ?>" style="background-image: url('<?php echo $image["url"]; ?>')"></div>
 							<!-- img element for pinterest -->
@@ -106,7 +106,7 @@
 
 					<?php if( get_row_layout() == '2_x_portrait' ): ?>
 						<!-- 2 x Portrait -->
-						<div class="col-6 col-sm-6 col-md-5 col-lg-4">
+						<div class="col-6 col-sm-6 col-md-5">
         					<?php $image1 = get_sub_field('image_1'); ?>
         					<div class="grid-portrait extra-margin zoom" data-zoomview-src="<?php echo $image1["url"]; ?>" style="background-image: url('<?php echo $image1["url"]; ?>')"></div>
         					<!-- img element for pinterest -->
@@ -114,7 +114,7 @@
 							    <img src="<?php echo $image1["url"]; ?>">
 							</div>
 						</div><!-- .col-6 .col-sm-6 .col-md-5 .col-lg-4 -->
-						<div class="col-6 col-sm-6 col-md-5 col-lg-4">
+						<div class="col-6 col-sm-6 col-md-5">
         					<?php $image2 = get_sub_field('image_2'); ?>
         					<div class="grid-portrait extra-margin zoom" data-zoomview-src="<?php echo $image2["url"]; ?>" style="background-image: url('<?php echo $image2["url"]; ?>')"></div>
         					<!-- img element for pinterest -->
@@ -127,7 +127,7 @@
 
 					<?php if( get_row_layout() == '1_x_square' ): ?>
 						<!-- 1 x Square -->
-						<div class="col-12 col-sm-12 col-md-10 col-lg-8">
+						<div class="col-12 col-sm-12 col-md-10">
 							<?php $image = get_sub_field('image'); ?>
 							<div class="grid-square-one extra-margin zoom" data-zoomview-src="<?php echo $image["url"]; ?>" style="background-image: url('<?php echo $image["url"]; ?>')"></div>
 							<!-- img element for pinterest -->
@@ -140,7 +140,7 @@
 
 					<?php if( get_row_layout() == '2_x_square' ): ?>
 						<!-- 2 x Square -->
-						<div class="col-12 col-sm-12 col-md-5 col-lg-4">
+						<div class="col-12 col-sm-12 col-md-5">
         					<?php $image1 = get_sub_field('image_1'); ?>
         					<div class="grid-square extra-margin zoom" data-zoomview-src="<?php echo $image1["url"]; ?>" style="background-image: url('<?php echo $image1["url"]; ?>')"></div>
         					<!-- img element for pinterest -->
@@ -148,7 +148,7 @@
 							    <img src="<?php echo $image1["url"]; ?>">
 							</div>
 						</div><!-- .col-12 .col-sm-12 .col-md-5 .col-lg-4 -->
-						<div class="col-12 col-sm-12 col-md-5 col-lg-4">
+						<div class="col-12 col-sm-12 col-md-5">
         					<?php $image2 = get_sub_field('image_2'); ?>
         					<div class="grid-square extra-margin zoom" data-zoomview-src="<?php echo $image2["url"]; ?>" style="background-image: url('<?php echo $image2["url"]; ?>')"></div>
         					<!-- img element for pinterest -->
@@ -161,7 +161,7 @@
 
 					<?php if( get_row_layout() == '3_x_square' ): ?>
 						<!-- 3 x Square -->
-						<div class="col-12 col-sm-12 col-md-10 col-lg-8">
+						<div class="col-12 col-sm-12 col-md-10">
 							<div class="content-square">
 	        					<?php $image1 = get_sub_field('image_1'); ?>
 	        					<div class="grid-square-triple extra-margin zoom" data-zoomview-src="<?php echo $image1["url"]; ?>" style="background-image: url('<?php echo $image1["url"]; ?>')"></div>
