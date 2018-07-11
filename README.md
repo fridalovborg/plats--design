@@ -1,3 +1,3 @@
 # Plats! Design
 
-<a href="#">Demo</a>
+<a href="http://www.platsdesign.se/" target="_blank">Demo</a>
